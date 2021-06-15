@@ -271,15 +271,14 @@ border:0;
   height: 1080px;
   padding-top: 92px;
   position: relative;
-
   text-align: left;
-  z-index: 6;
+  z-index: 2;
 }
 
 .black-section {
   background-color: black;
   top: 4393px;
-  left: 0px;
+  left: 0;
   width: 1920px;
   height: 285px;
 }
@@ -358,7 +357,7 @@ border:0;
 
 .box .text {
   position: absolute;
-  z-index: 999;
+  z-index: 1;
   margin: 0 auto;
   left: 0;
   right: 0;
@@ -517,4 +516,14 @@ border:0;
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+/* caseStudies */
+.modal-content{
+  width : 700px;
+  font-size: 20px;
+}
+
+.modal-title{
+  font-size: 25px;
 }
