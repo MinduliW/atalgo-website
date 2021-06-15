@@ -1,0 +1,391 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Atalgo Computing</title>
+
+
+  <!-- google fonts-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Passion+One&family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+  <!-- bootstrap-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="../css/styles.css">
+
+  <!-- font awesome-->
+  <script src="https://kit.fontawesome.com/73938604d7.js" crossorigin="anonymous"></script>
+
+  <!-- css javascript -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+
+  <section class="special-section" id="title">
+
+    <div class="container-fluid3">
+
+      <!-- Nav Bar -->
+
+      <nav class="navbar navbar-expand-lg navbar-custom">
+
+        <a class="navbar-brand" href="index.html">atalgo </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Home </a>
+            </li>
+            <li class="nav-item">
+              <div class="dropdown">
+                <a class="nav-link" href="../index.html#features">Capabilities</a>
+                <div class="dropdown-content">
+                  <a href="../productEngineering.html">Product Management</a>
+                  <a href="../enterpriseAI.html">Enterprise AI</a>
+                  <a href="../testAutomation.html">Test Automation</a>
+                </div>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="../caseStudies.html">Case Studies</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Flame</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="../blogs.html">Blogs</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html#cta">Contact Us</a>
+            </li>
+          </ul>
+
+
+        </div>
+
+
+
+      </nav>
+
+      <!-- Title -->
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="special-heading"> The Ins and Outs of Test Automation - Part II </h1>
+        </div>
+        <div class="col-lg-12">
+          <img class="product-banner-image" src="../images/Banner_lines.svg" alt="banner lines">
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="blog-section" id="details">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-9">
+          <img class="blogimage" src="../images/blog_image.webp" alt="">
+
+          <p class="specific-description" style="margin-top: 20px">
+            <em> Hi, I'm Minduli. I am a software engineer at Atalgo Computing. We are launching Flame, a new codeless test automation platform for mobile, web and API testing! During these exciting times, I'm here to tell you more about test
+              automation and Flame through a series of posts just like this one. So, sit tight and enjoy the ride!
+          </p>
+          </em>
+
+          <p class="specific-description">
+            As mentioned in The Ins and Outs of Test Automation - Part I, Flame is an AI-augmented test automation platform, with the capacity to test web, mobile and API applications. Flame enables testers to automate their workflows and run them
+            repeatedly, saving time and money.
+          </p>
+
+          <p class="specific-description">
+            For training and beta testing purposes, once you are subscribed to our software, you will be able to access our test instance along with your own login credentials. Flame is an enterprise-grade self-service based platform which means that
+            you will be able to set up new projects, add new testers, as well as schedule and conduct automated testing. You can also set up Slack or Teams notifications from Flame Settings itself.
+          </p>
+
+          <p class="specific-description">
+            In this article, we are looking at how to run a simple automated web test using Flame. Here is how you can automate simple test cases which will carry out a google search! </p>
+
+
+          <h2 class="subsection">1. Create a YAML file. </h2>
+
+          <p class="specific-description">
+            First, we construct a YAML file that contains the instructions that you want to pass to Flame, in order to conduct the testing. Note that the title of this YAML file is the title of the test as shown on Flame. The YAML script given in
+            Script 1 allows you to google "Hello world"
+          </p>
+
+          <figure>
+            <img class="blogimage" src="../images/helloworld.png" alt="hello world script" style="width : 900px">
+            <figcaption class="specific-description" style="text-align: center">Script 1: Test script for googling 'Hello World' using Flame.</figcaption>
+          </figure>
+
+          <p class="specific-description">
+            If you compare script 1 to script 2, which conducts the same testing through Java, you can see that script 1 is much simpler and easier to comprehend. Script 1 also does not involve any code.
+          </p>
+
+
+          <figure>
+            <img class="blogimage" src="../images/java.png" alt="hello world script" style="width : 900px">
+            <figcaption class="specific-description" style="text-align: center">Script 2:Test script for googling 'Hello World' using Java. </figcaption>
+          </figure>
+
+          <h2 class="subsection">2. Upload the YAML file to the server. </h2>
+
+          <p class="specific-description">
+            Here we upload our YAML file to the Flame server. This process would be described in detail in The Ins and Outs of Test Automation - Part V. Once this is done, our test script would be available to your project within your test instance.
+          </p>
+
+          <h2 class="subsection">3. Integrate Flame with Slack or Teams (Optional) </h2>
+
+          <p class="specific-description">
+            From the notification tab in Flame, we can set up a webhook to our Slack or Teams workspace. This allows us to receive Slack/Teams notifications that contain the details of the tests being conducted on Flame. The notifications interface
+            is shown in Figure 1. </p>
+
+          <figure>
+            <img class="blogimage" src="../images/notifications.webp" alt="notifications script" style="width : 900px">
+            <figcaption class="specific-description" style="text-align: center">Figure 1: The notifications section of Flame, used to setup webhooks to generate Slack and/or Teams notifications. </figcaption>
+          </figure>
+
+          <h2 class="subsection">4. Run the test. </h2>
+          <p class="specific-description">Now we go to the executions tab on Flame. This tab is shown in Figure 2. Then we select the create option to generate a new test suite that contains our google search test script.
+          </p>
+
+          <figure>
+            <img class="blogimage" src="../images/executions.webp" alt="executions" style="width : 900px">
+            <figcaption class="specific-description" style="text-align: center">
+              Figure 2: The executions section of Flame, used to create new test suits and analyse the results of completed tests.
+            </figcaption>
+          </figure>
+
+          <p class="specific-description">Clicking the create button opens up the content box shown in Figure 3. Here we can give a label to our test instance, set the number of iterations and set the environment for our test. Then we select our test
+            script from the list given and press the start button to begin running the test.
+          </p>
+          <figure>
+            <img class="blogimage" src="../images/createxe.webp" alt="create execution" style="width : 900px">
+            <figcaption class="specific-description" style="text-align: center">
+              Figure 3: The creation of a new test suite in Flame.
+            </figcaption>
+          </figure>
+
+          <h2 class="subsection">5. Wait for the test to run. </h2>
+
+          <figure>
+            <img class="blogimage" src="../images/p1.webp" alt="executions" style="width : 900px">
+            <figcaption class="specific-description" style="text-align: center">
+              Figure 4: Pending screen and Completed screen on Flame.
+            </figcaption>
+          </figure>
+
+          <p class="specific-description">While we wait for our test to complete Flame will show our test as pending. When it is completed, we will see the rest result change from pending to passed/failed. If there were multiple tests in our test
+            suit, they all will appear under the Test column. At any point during the testing, we are allowed to cancel the testing using the cancel button.
+</p>
+
+<figure>
+  <video width="900" controls>
+    <source src="../images/videoblog2.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <figcaption class = "specific-description" style= "text-align: center">
+Video 1: Conducting the Hello World test.
+  </figcaption>
+</figure>
+
+
+
+
+
+
+
+<h2 class = "subsection">6. Analyse the results.  </h2>
+
+<p class="specific-description" >
+  Once the test has finished, we can analyse the results obtained. Flame gives us the test outcomes, a log of activities, as well as test statistics. We are also given an error analysis which tells us the root cause of any error present, along with a failure summary. If we have a slack webhook set up, notifications similar to the ones shown in Figure 6 would also be given during the test run.
+
+</p>
+
+<figure>
+  <img class = "blogimage" src="../images/results.webp" alt="results" style = "width : 900px">
+  <figcaption class = "specific-description" style= "text-align: center">
+Figure 5: Test outcome
+  </figcaption>
+</figure>
+
+<figure>
+  <img class = "blogimage" src="../images/slack.webp" alt="slack notification" style = "width : 900px">
+  <figcaption class = "specific-description" style= "text-align: center">
+Figure 6: The slack notifications given while running our test suite.
+  </figcaption>
+</figure>
+<p class="specific-description" >
+This concludes our web testing! As you can see, it required no code, and was really very simple to understand. That is the advantage of using Flame for test automation. It does not require you to understand Java or any other languages. Neither do you have to interact directly with Selenium!
+</p>
+
+<p class="specific-description" >
+I hope you've enjoyed reading this article! In The Ins and Outs of Test Automation - Part II|, I will describe the process of adding your YAML test scripts to the Flame server.  Later on, we will see how to conduct Mobile and API testing on Flame.
+</p>
+
+
+
+</div>
+
+            </div>
+
+
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="coloured-section " id="cta">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-8 col-md-12 col-sm-12 props">
+          <h1 class="contact-us"> CONTACT US </h1>
+          <p class="contact-details">
+            Level 1, 191 St George's <br> Terrace, Perth WA 6000, <br> Australia.
+          </p>
+          <p class="contact-details">
+            Email : contact@atalgo.com
+          </p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3385.2555601596823!2d115.85104605066199!3d-31.95396292956419!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2a32bad4d950a1b7%3A0x26090ebd0afbe6b!2slevel%201%2F191%20St%20Georges%20Terrace%2C%20Perth%20WA%206000%2C%20Australia!5e0!3m2!1sen!2slk!4v1623304664653!5m2!1sen!2slk"
+            width="600" height="450" style="border:0;" allowfullscreen=""  align="left"></iframe>
+        </div>
+
+        <div class="col-lg-4 col-md-12 col-sm-12 props moveleft">
+          <h1 class = "forEnquiries"> For Enquiries</h1>
+          <p class="enquirymsg">
+            Leave us a message and we will call you as soon as possible to discuss your needs.
+          </p>
+
+
+          <form action="mailto:contact@atalgo.com" enctype='text/plain'>
+            <div class="mb-3">
+              <label for="exampleInputname" class="form-label">FULL NAME</label>
+              <input type="text" class="form-control" id="exampleInputname">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">EMAIL ADDRESS</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputnumber" class="form-label ">CONTACT NUMBER </label>
+              <input type="number" class="form-control" id="exampleInputnumber">
+            </div>
+
+            <div class="mb-3">
+              <label for="exampleInputcomment" class="form-label ">ADD COMMENT </label>
+              <textarea type="text" class="form-control" id="exampleInputcomment"></textarea>
+            </div>
+
+  <div class="text-right">
+            <button type="submit" class="btn btn-dark btntext">SUBMIT</button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+
+  <footer class="black-section" id="footer">
+
+    <div class="container-fluid5">
+
+      <nav class="navbar navbar-expand-lg">
+
+        <a class="navbar-brand bluelabel" href="#">atalgo </a>
+
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Home </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../index.html#features">Capabilities</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="../caseStudies.html">Case Studies</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Flame</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="../blogs.html">Blogs</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html#cta">Contact Us</a>
+            </li>
+          </ul>
+
+
+          </div>
+
+
+
+      </nav>
+
+      <nav class="navbar navbar-expand-lg navbar-custom">
+
+        <p> © Copyright Atalgo 2021 </p>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ml-auto">
+            <!-- <li class="nav-item">
+  <img src="images/Youtube_icon.svg" />
+</li> -->
+
+            <li class="nav-item">
+              <a href="https://www.linkedin.com/company/atalgo"><img src="images/Linked_in.svg" /></a>
+            </li>
+
+            <!-- <li class="nav-item">
+              <img src="images/Tweeter_logo.svg" />
+            </li>
+
+            <li class="nav-item">
+              <img src="images/FB_logo.svg" />
+            </li> -->
+          </ul>
+
+        </div>
+
+
+      </nav>
+
+
+  </footer>
+
+
+</body>
+
+</html>

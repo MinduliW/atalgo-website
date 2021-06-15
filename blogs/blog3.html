@@ -14,7 +14,7 @@
   <!-- bootstrap-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="../css/styles.css">
 
   <!-- font awesome-->
   <script src="https://kit.fontawesome.com/73938604d7.js" crossorigin="anonymous"></script>
@@ -36,7 +36,7 @@
 
       <nav class="navbar navbar-expand-lg navbar-custom">
 
-        <a class="navbar-brand" href="index.html">atalgo </a>
+        <a class="navbar-brand" href="../index.html">atalgo </a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -45,33 +45,33 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Home </a>
+              <a class="nav-link" href="../index.html">Home </a>
             </li>
             <li class="nav-item">
               <div class="dropdown">
-                <a class="nav-link" href="index.html#features">Capabilities</a>
+                <a class="nav-link" href="../index.html#features">Capabilities</a>
                 <div class="dropdown-content">
-                  <a href="productEngineering.html">Product Management</a>
-                  <a href="enterpriseAI.html">Enterprise AI</a>
-                  <a href="testAutomation.html">Test Automation</a>
+                  <a href="../productEngineering.html">Product Management</a>
+                  <a href="../enterpriseAI.html">Enterprise AI</a>
+                  <a href="../testAutomation.html">Test Automation</a>
                 </div>
               </div>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="caseStudies.html">Case Studies</a>
+              <a class="nav-link" href="../caseStudies.html">Case Studies</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Flame</a>
+              <a class="nav-link" href="#">Flame</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="blogs.html">Blogs</a>
+              <a class="nav-link" href="../blogs.html">Blogs</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="index.html#cta">Contact Us</a>
+              <a class="nav-link" href="../index.html#cta">Contact Us</a>
             </li>
           </ul>
 
@@ -84,10 +84,10 @@
       <!-- Title -->
       <div class="row">
         <div class="col-lg-12">
-          <h1 class="special-heading"> ENTERPRISE AI </h1>
+          <h1 class="special-heading"> The Ins and Outs of Test Automation - Part III </h1>
         </div>
         <div class="col-lg-12">
-          <img class="product-banner-image" src="images/Banner_lines.svg" alt="banner lines">
+          <img class="product-banner-image" src="../images/Banner_lines.svg" alt="banner lines">
         </div>
       </div>
 
@@ -95,46 +95,88 @@
 
   </section>
 
-  <section class="details-section" id="details">
-    <div class="container-fluid2">
+  <section class="blog-section" id="details">
+    <div class="container-fluid">
       <div class="row">
-        <div class="col-sm-8 props">
-          <p class="specific-description">
-        Artificial Intelligence is the new frontier of computing which, if applied correctly, can result in transformative business advantages. The Machine Learning based AI technologies are increasingly proving to be useful in solving many business challenges more effectively and efficiently. We are seeing exponential growth in enterprise business use cases for machine learning applications. We have growing competency in developing and deploying production grade enterprise machine learning applications. We also have competency in other data science and data modelling including statistical modelling and symbolic AI based applications. We are well versed with ML technology stack including but not limited to AutoML, MLFlow and TensorFlow. We understand the challenges in production deployment and maintenance of ML based models at enterprise. Atalgo can work in strategy as well as execution of ML projects in various business domains.</p>
+        <div class="col-sm-9">
+          <img class = "blogimage" src="../images/blog_image.webp" alt="">
 
-        </div>
+          <p class="specific-description" >
+  <em>  Hi, I'm Minduli. I am a software engineer at Atalgo Computing. We are launching Flame, a new codeless test automation platform for mobile, web and API testing! During these exciting times, I'm here to tell you more about test automation and Flame through a series of posts just like this one. So, sit tight and enjoy the ride! </p>
+  </em>
 
-        <div class="col-sm-4 props">
-          <h1> Blogs</h1>
+  <p class="specific-description">
+    This week, we are going through the process of writing test scripts for Flame in more detail.
 
-          <div class="card border-0">
-            <div class="card-body">
-              <h5 class="card-title blogtitle">The Ins and Outs of Test Automation - Part I </h5>
-              <p class="card-text">Ever run the same code on your computer 1000 times looking for bugs? Test automation can take that process right out of your hands. Test automation is defined...</p>
-              <a href="blogs/blog1.html">Read More</a>
+We will go through each component in a test script to understand what it is for, and what it
+
+does.
+  </p>
+  <h1 class = "mainsection"> Test Structure</h1>
+
+    <p class="specific-description">
+      The tests we conduct are defined as individual YAML files. YAML is a human-friendly data
+
+format that makes it very easy to create, read and modify the tests in any text editor and with
+
+minimal training.
+
+  </p>
+
+
+        <h2 class = "subsection" >Sample Test script with comments </h2>
+
+        <p class="specific-description">
+        Here we are writing a test script that will take us to youtube.com.  </p>
+
+            <p class="specific-description">
+  1. First, we give a human-readable description of the task to be conducted</p>
+  <pre> <code style= "font-size: 20px">description: Navigate to youtube</code></pre>
+
+  <p class="specific-description">
+2. Then we define the start of a new test actor section. Here ACTOR1 will be performing the task of going to the youtube homepage.</p>
+<pre> <code style= "font-size: 20px"> - actor: ACTOR1</code></pre>
+
+<p class="specific-description">
+3. Then we open the segments section, where all the tasks are conducted. The segments are executed sequentially, so segment: 1 would happen before segment 2.</p>
+<pre> <code style= "font-size: 20px"> segments:
+      - segment: 1</code></pre>
+
+<p class="specific-description">
+4. Now, we give a human-readable description of the test action in segment 1. This is optional.</p>
+<pre> <code style= "font-size: 20px">  - description: Navigate to the landing page</code></pre>
+
+<p class="specific-description">
+5. Then we state the full name of the action (keyword) that we want to run.</p>
+<pre> <code style= "font-size: 20px">  action: org.flame.selenium.NavigateTo</code></pre>
+
+<p class="specific-description">
+6. Finally, we give the parameters for the args property, which is a list of arguments passed to the segment 1 test action.</p>
+<pre> <code style= "font-size: 20px">   args:
+              url: https://youtube.com </code></pre>
+
+<p class="specific-description">
+The complete script is as follows. </p>
+
+<pre> <code style= "font-size: 20px">
+  description: Navigate to youtube
+  actors:
+    - actor: ACTOR1
+      segments:
+        - segment: 1
+          actions:
+            - description: Navigate to the landing page
+              action: org.flame.selenium.NavigateTo
+              args:
+                url: https://youtube.com
+              </code></pre>
+
+<p class="specific-description"> When this script is run, our actor opens youtube.com through Flame!  </p>
+
+
             </div>
 
-          </div>
 
-
-          <div class="card border-0 ">
-            <div class="card-body">
-              <h5 class="card-title blogtitle">The Ins and Outs of Test Automation - Part II </h5>
-              <p class="card-text">For training and beta testing purposes, once you are subscribed to our software, you will be able to access our test instance along with your own ...</p>
-              <a href="blogs/blog2.html">Read More</a>
-            </div>
-          </div>
-
-
-          <div class="card border-0 ">
-            <div class="card-body">
-              <h5 class="card-title blogtitle">The Ins and Outs of Test Automation - Part III </h5>
-              <p class="card-text">This week, we are going through the process of writing test scripts for Flame in more detail. We will go through each component in a test script to ...</p>
-              <a href="blogs/blog3.html">Read More</a>
-            </div>
-          </div>
-
-        </div>
 
       </div>
 
@@ -210,33 +252,35 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Home </a>
+              <a class="nav-link" href="../index.html">Home </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="index.html#features">Capabilities</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="caseStudies.html">Case Studies</a>
+                <a class="nav-link" href="../index.html#features">Capabilities</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Flame</a>
+              <a class="nav-link" href="../caseStudies.html">Case Studies</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="blogs.html">Blogs</a>
+              <a class="nav-link" href="#">Flame</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="index.html#cta">Contact Us</a>
+              <a class="nav-link" href="../blogs.html">Blogs</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html#cta">Contact Us</a>
             </li>
           </ul>
 
-        </div>
+
+          </div>
+
 
 
       </nav>

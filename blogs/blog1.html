@@ -14,7 +14,7 @@
   <!-- bootstrap-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="../css/styles.css">
 
   <!-- font awesome-->
   <script src="https://kit.fontawesome.com/73938604d7.js" crossorigin="anonymous"></script>
@@ -36,7 +36,7 @@
 
       <nav class="navbar navbar-expand-lg navbar-custom">
 
-        <a class="navbar-brand" href="index.html">atalgo </a>
+        <a class="navbar-brand" href="../index.html">atalgo </a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -45,33 +45,33 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Home </a>
+              <a class="nav-link" href="../index.html">Home </a>
             </li>
             <li class="nav-item">
               <div class="dropdown">
-                <a class="nav-link" href="index.html#features">Capabilities</a>
+                <a class="nav-link" href="../index.html#features">Capabilities</a>
                 <div class="dropdown-content">
-                  <a href="productEngineering.html">Product Management</a>
-                  <a href="enterpriseAI.html">Enterprise AI</a>
-                  <a href="testAutomation.html">Test Automation</a>
+                  <a href="../productEngineering.html">Product Management</a>
+                  <a href="../enterpriseAI.html">Enterprise AI</a>
+                  <a href="../testAutomation.html">Test Automation</a>
                 </div>
               </div>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="caseStudies.html">Case Studies</a>
+              <a class="nav-link" href="../caseStudies.html">Case Studies</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Flame</a>
+              <a class="nav-link" href="#">Flame</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="blogs.html">Blogs</a>
+              <a class="nav-link" href="../blogs.html">Blogs</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="index.html#cta">Contact Us</a>
+              <a class="nav-link" href="../index.html#cta">Contact Us</a>
             </li>
           </ul>
 
@@ -84,10 +84,10 @@
       <!-- Title -->
       <div class="row">
         <div class="col-lg-12">
-          <h1 class="special-heading"> ENTERPRISE AI </h1>
+          <h1 class="special-heading"> The Ins and Outs of Test Automation - Part I </h1>
         </div>
         <div class="col-lg-12">
-          <img class="product-banner-image" src="images/Banner_lines.svg" alt="banner lines">
+          <img class="product-banner-image" src="../images/Banner_lines.svg" alt="banner lines">
         </div>
       </div>
 
@@ -95,50 +95,84 @@
 
   </section>
 
-  <section class="details-section" id="details">
-    <div class="container-fluid2">
+  <section class="blog-section" id="details">
+    <div class="container-fluid">
       <div class="row">
-        <div class="col-sm-8 props">
-          <p class="specific-description">
-        Artificial Intelligence is the new frontier of computing which, if applied correctly, can result in transformative business advantages. The Machine Learning based AI technologies are increasingly proving to be useful in solving many business challenges more effectively and efficiently. We are seeing exponential growth in enterprise business use cases for machine learning applications. We have growing competency in developing and deploying production grade enterprise machine learning applications. We also have competency in other data science and data modelling including statistical modelling and symbolic AI based applications. We are well versed with ML technology stack including but not limited to AutoML, MLFlow and TensorFlow. We understand the challenges in production deployment and maintenance of ML based models at enterprise. Atalgo can work in strategy as well as execution of ML projects in various business domains.</p>
+        <div class="col-sm-8">
+          <img class = "blogimage" src="../images/blog_image.webp" alt="">
 
-        </div>
+          <p class="specific-description" >
+  <em>  Hi, I'm Minduli. I am a software engineer at Atalgo Computing. We are launching Flame, a new codeless test automation platform for mobile, web and API testing! During these exciting times, I'm here to tell you more about test automation and Flame through a series of posts just like this one. So, sit tight and enjoy the ride! </p>
+  </em>
 
-        <div class="col-sm-4 props">
-          <h1> Blogs</h1>
+  <p class="specific-description">
+    Ever run the same code on your computer 1000 times looking for bugs? Test automation can take that process right out of your hands. Test automation is defined as the practice of running tests automatically while managing data and even using the results obtained to improve software quality. Implemented widely, test automation software is often able to do the most manual testing work of an entire software project.
 
-          <div class="card border-0">
-            <div class="card-body">
-              <h5 class="card-title blogtitle">The Ins and Outs of Test Automation - Part I </h5>
-              <p class="card-text">Ever run the same code on your computer 1000 times looking for bugs? Test automation can take that process right out of your hands. Test automation is defined...</p>
-              <a href="blogs/blog1.html">Read More</a>
+However, for a certain test to be automated, the following criteria must be satisfied.
+  </p>
+  <h2 class = "subsection"> It must be repeatable</h2>
+
+    <p class="specific-description">
+      If a test is not repeatable, there is no point in automating it. However, to achieve repetition, we need to ensure that once the test has taken place, the data and the environment return to their original states.
+        </p>
+
+
+        <h2 class = "subsection" >It must be determinant </h2>
+
+        <p class="specific-description">
+        The outcomes of the test must remain the same each time it is run to ensure that it is determinant. The non-deterministic nature of a test can cause problems if a lot of instances are run in parallel. For instance, if the test is to add a new user to the system and report back the number of users, doing this in parallel may cause unexpected results to come about. In these instances, the test automation software must be explicitly told to avoid parallel testing, if possible.
+            </p>
+
+
+            <h2 class = "subsection">It must be unopinionated </h2>
+
+            <p class="specific-description">
+              No method of automating beta testing or usability testing is available today, as the outcome of such testing relies heavily on individual opinions. Thus, the test must be devoid of opinion-related inputs or outputs to be successfully automated.
+</p>
+  <p class="specific-description">
+    Once the above criteria are met, there are several options for the types of automated testing that can be conducted.  </p>
+
+    <h2 class = "subsection">Unit testing </h2>
+
+    <p class="specific-description">
+      These are tests done on a single isolated unit of a particular application. They do not depend on external APIs or databases. Unit testing is conducted to see how each component of an application behaves without being impacted by other components.  </p>
+
+
+      <h2 class = "subsection" >Integration Testing</h2>
+      <p class="specific-description" > Integration testing is conducted to see how units are working as a group. Through this testing, we can see how units of software communicate with each other and work together.
+</p>
+
+
+<h2 class = "subsection" >Smoke Testing</h2>
+     <p class="specific-description" >
+     Smoke testing is done to determine whether if a system as a whole is stable or not. It can determine whether if the main functionality of a software is working or not.
+</p>
+<h2 class = "subsection" > Regression Testing</h2>
+    <p class="specific-description">
+     Regression testing verifies whether if changes made to the system broke any of the existing functionality or not.
+</p>
+
+<h1 class = "mainsection">Importance of Test Automation </h1>
+<p class="specific-description">
+With time, software development has evolved to be a complex and long-winded process. Today, new software is being delivered to the customers more frequently than ever, and continuous testing is done to ensure that mistakes made in the development process can be discovered and fixed as soon as possible. Test automation can save a significant amount of time and money spent on testing, as it can improve software quality quickly. A test automation software can gather testing concerns, manage test data, run tests as well as track results. Essentially it is the logical next step for the development teams that are overwhelmed by the sheer repetition of manual tests that can be automated.
+</p>
+
+<h1 class = "mainsection">Why Flame? </h1>
+<p class="specific-description">
+  Flame is an AI-augmented test automation platform catering to enterprise and cloud-based ERP systems involving complex business scenarios. It has been designed as a codeless platform keeping manual testers with business knowledge in mind. Flame will enable them to automate their complex workflows across platforms and derive value from testing more frequently. Flame and can be plugged into any continuous integration/continuous delivery solution.
+
+  In follow up article, I will try to provide a step by step walkthrough of how we can setup Flame for a test automation project and easily start writing and executing the scripts to test any software applications.</p>
+
+
+</div>
+
             </div>
 
-          </div>
 
 
-          <div class="card border-0 ">
-            <div class="card-body">
-              <h5 class="card-title blogtitle">The Ins and Outs of Test Automation - Part II </h5>
-              <p class="card-text">For training and beta testing purposes, once you are subscribed to our software, you will be able to access our test instance along with your own ...</p>
-              <a href="blogs/blog2.html">Read More</a>
-            </div>
-          </div>
-
-
-          <div class="card border-0 ">
-            <div class="card-body">
-              <h5 class="card-title blogtitle">The Ins and Outs of Test Automation - Part III </h5>
-              <p class="card-text">This week, we are going through the process of writing test scripts for Flame in more detail. We will go through each component in a test script to ...</p>
-              <a href="blogs/blog3.html">Read More</a>
-            </div>
-          </div>
-
-        </div>
 
       </div>
 
-    </div>
   </section>
 
 
@@ -210,33 +244,35 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Home </a>
+              <a class="nav-link" href="../index.html">Home </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="index.html#features">Capabilities</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="caseStudies.html">Case Studies</a>
+                <a class="nav-link" href="../index.html#features">Capabilities</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Flame</a>
+              <a class="nav-link" href="../caseStudies.html">Case Studies</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="blogs.html">Blogs</a>
+              <a class="nav-link" href="#">Flame</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="index.html#cta">Contact Us</a>
+              <a class="nav-link" href="../blogs.html">Blogs</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html#cta">Contact Us</a>
             </li>
           </ul>
 
-        </div>
+
+          </div>
+
 
 
       </nav>

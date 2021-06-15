@@ -3,38 +3,180 @@ body {
   text-align: center;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h3, h4, h5, h6 {
   font-family: 'Passion One';
-
 }
 
-.contact-us{
+.img-container {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.subsection {
   color: black;
-  text-align:left;
+  text-align: left;
+  font-size: 20px;
+  font-family: "Arial";
+  font-weight: bold;
+  width : 500px;
+}
+
+.mainsection {
+  color: black;
+  text-align: left;
+  font-size: 25px;
+  font-family: "Arial";
+  font-weight: bold;
+}
+
+.blogimage {
+  align-items: baseline;
+  width: 900px;
+  padding-bottom: 30px;
+}
+
+video {
+  width: 900px;
+}
+
+.whowearetext {
+  font-size: 91px;
+  width: 582px;
+  height: 95px;
+  text-align: left;
+  position: relative;
+  left: -95px;
 
 }
 
-.capabilities{
+.blogstext {
+  font-size: 91px;
+}
+
+.contact-us {
+  font-size: 91px;
+  color: black;
+  text-align: left;
+  width: 582px;
+  height: 95px;
+  position: relative;
+  left: -95px;
+}
+
+.contact-details {
+  font-family: Helvetica, Sans-Serif;
+  font-size: 20px;
+  color: black;
+  text-align: left;
+  font-weight: bold;
+  position: relative;
+  left: -95px;
+}
+
+.capabilities {
   font-family: 'Passion One';
-  font-size: 3.5rem;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
+  font-size: 91px;
+  letter-spacing: 0px;
 }
+
+.forEnquiries {
+  font-family: 'Passion One';
+  font-size: 43px;
+  letter-spacing: 0;
+}
+
+.enquirymsg {
+  font-family: 'Arial';
+  font-size: 14px;
+  color: white;
+}
+
+.form-label {
+  font-family: 'Arial';
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.btntext {
+  font-family: "HelveticaNeue-Regular", "Helvetica Neue Regular", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 15px;
+  color: white;
+  border-radius: 0px;
+  background-color: black;
+}
+
 p {
   color: #8f8f8f;
 }
 
-.who-we-are{
+.who-we-are {
   color: black;
   text-align: left;
-  font-family: 'Ubuntu', sans-serif;
+  font-size: 20px;
+  font-family: "HelveticaNeue-Regular", "Helvetica Neue Regular", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  position : relative;
+  left: -95px;
+
+}
+
+.specific-description {
+  width: 900px;
+  color: black;
+  text-align: left;
+  font-size: 20px;
+  font-family: "HelveticaNeue-Regular", "Helvetica Neue Regular", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
 .big-heading {
   font-family: 'Passion One';
-  font-weight: 900;
-  font-size: 2.5rem;
-  line-height: 1.5;
+  /* font-weight: 900; */
+  font-size: 74px;
+  text-align: left;
+  letter-spacing: 0px;
+  margin-top: 112px;
+  position: relative;
+  left: -95px;
+  width: 729px;
+  height: 625px;
+}
+
+.blogentry {
+  background-color: #f4f4f4;
+  text-align: left;
+  color: black;
+  font-family: 'Arial';
+  font-size: 14px;
+}
+
+.card {
+  text-align: left;
+  color: black;
+  font-family: 'Arial';
+  font-size: 14px;
+}
+
+.blogtitle {
+  font-family: 'Arial';
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.special-heading {
+  font-family: 'Passion One';
+  /* font-weight: 900; */
+  font-size: 74px;
+  text-align: left;
+  letter-spacing: 0px;
+  position: relative;
+  left: -95;
+  z-index: 1;
 }
 
 .section-heading {
@@ -54,42 +196,85 @@ p {
   padding: 5% 15% 3% 15%;
   text-align: left;
 }
-/*sections  */
 
-.coloured-section{
-  background-color: #6464e8;
-  color: #fff;
+.container-fluid5 {
+  padding: 3% 15% 0% 15%;
+  text-align: left;
 }
 
-.navbar-toggler{
+/*sections  */
+.coloured-section {
+  background-color: #715AEF;
+  color: #fff;
+  top: 0px;
+  left: 0px;
+  width: 1920px;
+  height: 1080px;
+}
+
+.special-section {
+  background-color: #715AEF;
+  color: #fff;
+  top: 0px;
+  left: 0px;
+  width: 1920px;
+  height: 320px;
+}
+
+.blog-section {
+  background-color: #fff;
+  top: 0px;
+  left: 0px;
+  width: 1920px;
+  position: relative;
+  text-align: left;
+  z-index: 6
+}
+
+.navbar-toggler {
   position: relative;
   z-index: 2;
 }
-.grey-section{
+
+.grey-section {
   background-color: #f4f4f4;
   color: black;
-  margin-top: -5%;
+  top: 0px;
+  left: 0px;
+  width: 1920px;
+  height: 1080px;
 }
 
-.white-section{
-    background-color: #fff;
-    padding-bottom:  15%;
-}
-
-.details-section{
+.white-section {
   background-color: #fff;
-  padding-bottom:  10%;
+  padding-bottom: 15%;
+  top: 0px;
+  left: 0px;
+  width: 1920px;
+  height: 1080px;
+}
+
+.details-section {
+  background-color: #fff;
+  top: 0px;
+  left: 0px;
+  width: 1920px;
+  height: 1080px;
+  padding-top: 92px;
   position: relative;
-  z-index: 2;
+  text-align: left;
+  z-index: 6;
 }
 
-.black-section{
-  background-color:black;
-  margin-top: -10%;
-  padding-bottom : -5%;
+.black-section {
+  background-color: black;
+  top: 4393px;
+  left: 0px;
+  width: 1920px;
+  height: 285px;
 }
+
 /*Title  */
-
 #title .container-fluid {
   padding: 3% 15% 7%;
   text-align: left;
@@ -97,17 +282,26 @@ p {
 }
 
 /*navigation bar  */
-.moveleft{
-    text-align: left;
+.moveleft {
+  text-align: left;
 }
+
 .navbar-brand {
   font-family: 'Orbitron', sans-serif;
-  font-size: 2.5rem;
+  font-size: 50px;
   font-weight: bold;
   position: relative;
   z-index: 2;
+  letter-spacing: -1px;
+  text-align: left;
+  width: 170px;
+  height: 51px;
 }
 
+.row {
+  margin-left: 80px;
+  margin-right: -50px;
+}
 
 .navbar {
   padding: 0 0 4.5rem;
@@ -118,9 +312,9 @@ p {
 }
 
 .nav-link {
-  font-size: 1.2rem;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
+  font-size: 20px;
+  font-family: "HelveticaNeue-Bold", "Helvetica Neue Bold", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: bold;
   position: relative;
   z-index: 2;
 }
@@ -130,56 +324,70 @@ p {
 }
 
 .title-image {
-  width: 1500px;
   position: absolute;
-  right: -40%;
-  top : -90%;
+  right: -36%;
+  top: -30%;
   z-index: 1;
 }
 
-.product-banner-image{
-  width: 1500px;
+.product-banner-image {
   position: absolute;
-  right: -40%;
-  top : -350px;
-  z-index: 1;
+  right: -18%;
+  top: -350px;
+  z-index: 0;
 }
 
-.capabilities-image{
-  width: 500px;
-  position: absolute;
-  right: -30%;
-  top : -10%;
-  z-index: 1;
-  padding-left:  30px;
+.box {
+  position: relative;
+  display: inline-block;
+  /* Make the width of box same as image */
+  right: 50%;
+  width: 629px;
+  height: 606px;
 }
 
-
+.box .text {
+  position: absolute;
+  z-index: 999;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  top: 30%;
+  /* Adjust this value to move the positioned div up and down */
+  width: 60%;
+  /* Set the width of the positioned div */
+}
 
 .properties {
-  font-family: 'Montserrat';
-  font-size: 1.5rem;
-  font-weight: 700;
-  position: relative;
-  top : 20%;
+  font-family: 'Passion One', cursive;
+  font-size: 38px;
+  color: #4A67CE;
+  font-weight: 400;
+  /* top : 20%;
   right: -18%;
-  z-index: 2;
+  position: relative; */
 }
 
-.property_description{
-  position: relative;
-  top : 40%;
+.property_description {
+  font-family: "HelveticaNeue-Bold", "Helvetica Neue Bold", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  letter-spacing: 0px;
+  font-size: 20px;
+  padding-bottom: 40px;
+  /* top : 40%;
   right: -18%;
-  z-index: 2;
+  position: relative; */
 }
 
-.readmore{
-  position: relative;
-  top : 50%;
-  right: -18%;
-  z-index: 2;
-  font-family: 'Orbitron-Bold, Orbitron';
+.readmore {
+  /* top : 50%;
+  right: -18%; */
+  font-family: "HelveticaNeue-Bold", "Helvetica Neue Bold", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  letter-spacing: 0px;
+  font-size: 15px;
+  /* position: relative; */
 }
+
 .icons {
   color: #ef8172;
   margin-bottom: 1rem;
@@ -187,10 +395,6 @@ p {
 
 .icons:hover {
   color: #ff4c68;
-}
-
-.props {
-  padding: 5%
 }
 
 #features {
@@ -254,17 +458,25 @@ p {
 .navbar-custom .navbar-brand:hover {
   color: white;
 }
-.nav-link{color: white;}
-.navbar-brand{color: white;}
 
-.bluelabel{color: #4a67ce;}
+.nav-link {
+  color: white;
+}
+
+.navbar-brand {
+  color: white;
+}
+
+.bluelabel {
+  color: #4a67ce;
+}
+
 /*cta*/
-
 .bluelabel.navbar-brand:hover {
   color: #4a67ce;
 }
 
-#cta{
+#cta {
   padding-bottom: 20px;
 }
 
@@ -289,6 +501,10 @@ p {
   display: block;
 }
 
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
 
-.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
