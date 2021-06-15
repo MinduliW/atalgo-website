@@ -83,7 +83,7 @@ video {
 .capabilities {
   font-family: 'Passion One';
   font-size: 91px;
-  letter-spacing: 0px;
+  letter-spacing: 0;
 }
 
 .forEnquiries {
@@ -108,7 +108,7 @@ video {
   font-family: "HelveticaNeue-Regular", "Helvetica Neue Regular", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 15px;
   color: white;
-  border-radius: 0px;
+  border-radius: 0;
   background-color: black;
 }
 
@@ -134,12 +134,24 @@ p {
   font-family: "HelveticaNeue-Regular", "Helvetica Neue Regular", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
+iframe{
+border:0;
+  position: relative;
+  left: -95px;
+}
+.product-description{
+  width: 800px;
+  color: black;
+  text-align: left;
+  font-size: 20px;
+  font-family: "HelveticaNeue-Regular", "Helvetica Neue Regular", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
 .big-heading {
   font-family: 'Passion One';
   /* font-weight: 900; */
   font-size: 74px;
   text-align: left;
-  letter-spacing: 0px;
+  letter-spacing: 0;
   margin-top: 112px;
   position: relative;
   left: -95px;
@@ -173,7 +185,7 @@ p {
   /* font-weight: 900; */
   font-size: 74px;
   text-align: left;
-  letter-spacing: 0px;
+  letter-spacing: 0;
   position: relative;
   left: -95;
   z-index: 1;
@@ -189,7 +201,7 @@ p {
 }
 
 .container-fluid2 {
-  padding: 0% 15% 0% 15%;
+  padding: 0 15% 0 15%;
 }
 
 .container-fluid3 {
@@ -198,7 +210,7 @@ p {
 }
 
 .container-fluid5 {
-  padding: 3% 15% 0% 15%;
+  padding: 3% 15% 0 15%;
   text-align: left;
 }
 
@@ -206,8 +218,8 @@ p {
 .coloured-section {
   background-color: #715AEF;
   color: #fff;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   width: 1920px;
   height: 1080px;
 }
@@ -215,16 +227,16 @@ p {
 .special-section {
   background-color: #715AEF;
   color: #fff;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   width: 1920px;
   height: 320px;
 }
 
 .blog-section {
   background-color: #fff;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   width: 1920px;
   position: relative;
   text-align: left;
@@ -239,29 +251,27 @@ p {
 .grey-section {
   background-color: #f4f4f4;
   color: black;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   width: 1920px;
   height: 1080px;
 }
 
 .white-section {
   background-color: #fff;
-  padding-bottom: 15%;
-  top: 0px;
-  left: 0px;
   width: 1920px;
   height: 1080px;
 }
 
 .details-section {
   background-color: #fff;
-  top: 0px;
-  left: 0px;
-  width: 1920px;
+  top: 0;
+  left: -95px;
+  width: 2020px;
   height: 1080px;
   padding-top: 92px;
   position: relative;
+
   text-align: left;
   z-index: 6;
 }
