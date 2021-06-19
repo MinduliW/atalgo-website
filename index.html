@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+<link rel="icon" href="images/favicon.ico">
   <title>Atalgo Computing</title>
 
 
@@ -25,15 +25,16 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-
+<script src="https://www.google.com/recaptcha/api.js"></script>
 <!-- Loading header and footer  -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script>
-$(function(){
-  $("#footer").load("footer.html");
-});
+document.getElementById('form').addEventListener('submit', function(event) {
+  alert('submitted');
+  console.log('submitted');
+  event.preventDefault();
+})
 </script>
-
 </head>
 
 
@@ -61,7 +62,7 @@ $(function(){
             </li>
             <li class="nav-item">
               <div class="dropdown">
-                <a class="nav-link" href="index.html#features">Capabilities</a>
+                <a class="nav-link" href="index.html#features">Our Capabilities</a>
                 <div class="dropdown-content">
                   <a href="productEngineering.html">Product Management</a>
                   <a href="enterpriseAI.html">Enterprise AI</a>
@@ -117,7 +118,7 @@ $(function(){
 
   <section class="white-section" id="features">
     <div class="container-fluid">
-      <h1 class="capabilities"> CAPABILITIES </h1>
+      <h1 class="capabilities"> OUR CAPABILITIES </h1>
       <div class="row">
         <div class="col-lg-4 col-md-12 col-sm-12">
           <div class="box">
@@ -180,34 +181,30 @@ $(function(){
           <h1 class = "blogstext"> Blogs</h1>
 
 
-
-            <div class="card border-0 blogentry">
-              <div class="card-body">
-                <h5 class="card-title blogtitle">The Ins and Outs of Test Automation - Part I </h5>
-                <p class="card-text">Ever run the same code on your computer 1000 times looking for bugs? Test automation can take that process right out of your hands. Test automation is defined...</p>
-                <a href="blogs/blog1.html">Read More</a>
-              </div>
-
+          <div class="card border-0 blogentry">
+            <div class="card-body">
+              <h5 class="card-title blogtitle">The Ins and Outs of Test Automation - Part III </h5>
+              <p class="card-text">This week, we are going through the process of writing test scripts for Flame in more detail. We will go through each component in a test script to ...</p>
+              <a href="blogs/blog3.html">Read More</a>
             </div>
+          </div>
 
-
-            <div class="card border-0 blogentry">
-              <div class="card-body">
-                <h5 class="card-title blogtitle">The Ins and Outs of Test Automation - Part II </h5>
-                <p class="card-text">For training and beta testing purposes, once you are subscribed to our software, you will be able to access our test instance along with your own ...</p>
-                <a href="blogs/blog2.html">Read More</a>
-              </div>
+          <div class="card border-0 blogentry">
+            <div class="card-body">
+              <h5 class="card-title blogtitle">The Ins and Outs of Test Automation - Part II </h5>
+              <p class="card-text">For training and beta testing purposes, once you are subscribed to our software, you will be able to access our test instance along with your own ...</p>
+              <a href="blogs/blog2.html">Read More</a>
             </div>
+          </div>
 
+          <div class="card border-0 blogentry ">
+          <div class="card-body">
+            <h5 class="card-title blogtitle">The Ins and Outs of Test Automation - Part I </h5>
+            <p class="card-text">Ever run the same code on your computer 1000 times looking for bugs? Test automation can take that process right out of your hands. Test automation is defined...</p>
+            <a href="blogs/blog1.html">Read More</a>
+          </div>
 
-            <div class="card border-0 blogentry">
-              <div class="card-body">
-                <h5 class="card-title blogtitle">The Ins and Outs of Test Automation - Part III </h5>
-                <p class="card-text">This week, we are going through the process of writing test scripts for Flame in more detail. We will go through each component in a test script to ...</p>
-                <a href="https://minduli.wixsite.com/atalgoblogs/post/the-ins-and-outs-of-test-automation-part-iii">Read More</a>
-              </div>
-            </div>
-
+        </div>
 
         </div>
 
@@ -242,29 +239,65 @@ $(function(){
           </p>
 
 
-          <form action="mailto:contact@atalgo.com" enctype='text/plain'>
-            <div class="mb-3">
-              <label for="exampleInputname" class="form-label">FULL NAME</label>
-              <input type="text" class="form-control" id="exampleInputname">
-            </div>
-            <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">EMAIL ADDRESS</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            </div>
-            <div class="mb-3">
-              <label for="exampleInputnumber" class="form-label ">CONTACT NUMBER </label>
-              <input type="number" class="form-control" id="exampleInputnumber">
-            </div>
 
-            <div class="mb-3">
-              <label for="exampleInputcomment" class="form-label ">ADD COMMENT </label>
-              <textarea type="text" class="form-control" id="exampleInputcomment"></textarea>
-            </div>
 
-            <div class="text-right">
-            <button type="submit" class="btn btn-dark btntext">SUBMIT</button>
-            </div>
-          </form>
+
+          <form action="mailto:contact@atalgo.com"
+  method="POST"
+  enctype="multipart/form-data"
+  name="EmailForm" id="form">
+  <div class="mb-3">
+      <label for="exampleInputname" class="form-label">FULL NAME</label>
+      <input type="text" class="form-control" name="Contact-Name">
+    </div>
+    <div class="mb-3">
+
+        <label for="exampleInputEmail1" class="form-label">EMAIL ADDRESS</label>
+      <input type="email" class="form-control"  name="Contact-Email">
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputnumber" class="form-label ">CONTACT NUMBER </label>
+      <input type="number" class="form-control" id="exampleInputnumber">
+    </div>
+    <div class="mb-3">
+
+    <label for="exampleInputcomment" class="form-label ">ADD COMMENT </label>
+      <textarea name="Contact-Message" class="form-control" >
+      </textarea>
+        </div>
+
+
+        <!-- <div class="g-recaptcha" data-sitekey="6LeDikIbAAAAANS7yDRmpss_pIIk72_fe1jAIJ9A" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></div>
+          <input class="form-control d-none" data-recaptcha="true" required data-error="Please complete the Captcha">
+          <div class="help-block with-errors"></div> -->
+
+                              <label for="number" class="title">
+              What is three plus four?
+            </label>
+            <br>
+            <input
+              name="number"
+              required="required"
+              pattern="(7|seven)"
+              oninvalid="this.setCustomValidity('Sorry, please enter the correct answer')"
+              oninput="this.setCustomValidity('')"
+            >
+
+            <!-- Bonus honeypot field, hidden from the user.  The server should discard this response if it contains any input -->
+            <input name="decoy" style="display: none;" />
+
+
+
+
+  <input type="submit" class="btn btn-dark btntext">
+
+                  <!-- <button type="submit" class="btn btn-dark btntext">SUBMIT</button> -->
+              
+  </form>
+
+
+
+
         </div>
 
       </div>
@@ -293,7 +326,7 @@ $(function(){
               <a class="nav-link" href="index.html">Home </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="index.html#features">Capabilities</a>
+                <a class="nav-link" href="index.html#features">Our Capabilities</a>
             </li>
 
             <li class="nav-item">
